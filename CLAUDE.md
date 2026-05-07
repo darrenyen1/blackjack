@@ -13,7 +13,12 @@ open index.html                 # macOS
 
 ## Git workflow
 
-All changes must be committed and pushed to GitHub (`darrenyen1/blackjack`). Commit after every meaningful change with a conventional message (`feat:`, `fix:`, `style:`, `refactor:`).
+After every meaningful change, commit and push to GitHub (`darrenyen1/blackjack`) immediately — do not batch up multiple features into one commit. This ensures work is never lost and the repo always reflects the current state.
+
+- Commit as soon as a discrete piece of work is complete (a feature, a fix, a tweak)
+- Always push after committing — local-only commits are not acceptable
+- Use conventional commit prefixes: `feat:`, `fix:`, `style:`, `refactor:`, `docs:`
+- Write messages that describe what changed and why, not just "update files"
 
 ## Architecture
 
