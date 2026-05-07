@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <header>
+      <h1>BLACKJACK</h1>
+      <div id="balance-display">Balance: $1,000</div>
+    </header>
+
+    <div id="dealer-area">
+      <div id="dealer-label">DEALER</div>
+      <div id="dealer-cards"></div>
+      <div id="dealer-value"></div>
+    </div>
+
+    <div id="status-message">Place your bets!</div>
+
+    <div id="hands-area">
+
+      <div class="slot" id="slot-0">
+        <div class="slot-label">Hand 1</div>
+        <div class="slot-cards"></div>
+        <div class="slot-value"></div>
+        <div class="slot-bet"></div>
+        <div class="slot-actions"></div>
+        <div class="slot-result"></div>
+        <div class="bet-controls">
+          <button class="bet-minus">&#8722;</button>
+          <span class="bet-amount">$0</span>
+          <button class="bet-plus">+</button>
+        </div>
+      </div>
+
+      <div class="slot" id="slot-1">
+        <div class="slot-label">Hand 2</div>
+        <div class="slot-cards"></div>
+        <div class="slot-value"></div>
+        <div class="slot-bet"></div>
+        <div class="slot-actions"></div>
+        <div class="slot-result"></div>
+        <div class="bet-controls">
+          <button class="bet-minus">&#8722;</button>
+          <span class="bet-amount">$0</span>
+          <button class="bet-plus">+</button>
+        </div>
+      </div>
+
+      <div class="slot" id="slot-2">
+        <div class="slot-label">Hand 3</div>
+        <div class="slot-cards"></div>
+        <div class="slot-value"></div>
+        <div class="slot-bet"></div>
+        <div class="slot-actions"></div>
+        <div class="slot-result"></div>
+        <div class="bet-controls">
+          <button class="bet-minus">&#8722;</button>
+          <span class="bet-amount">$0</span>
+          <button class="bet-plus">+</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="deal-area">
+      <button id="deal-btn" disabled>Deal</button>
+      <button id="next-btn" class="hidden">Next Round</button>
+    </div>
+
+  </div>
+
+  <div id="game-over" class="hidden">
+    <div id="game-over-box">
+      <h2>GAME OVER</h2>
+      <p>You&#39;ve run out of chips.</p>
+      <button id="restart-btn">Play Again ($1,000)</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
