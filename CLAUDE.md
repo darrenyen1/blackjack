@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Running the game
 
-Open `index.html` directly in a browser — no build step, no server required.
+Open `BlackJack.html` directly in a browser — no build step, no server required.
 
 ```
-start "" "index.html"          # Windows
-open index.html                 # macOS
+start "" "BlackJack.html"      # Windows
+open BlackJack.html             # macOS
 ```
 
 ## Git workflow
@@ -26,7 +26,7 @@ Plain HTML/CSS/JS — no frameworks, no dependencies, no bundler.
 
 | File | Role |
 |---|---|
-| `index.html` | Static DOM shell; no logic |
+| `BlackJack.html` | Static DOM shell; no logic |
 | `style.css` | Casino-green theme; card styles, slot states, overlay |
 | `game.js` | All game state and logic |
 
